@@ -63,9 +63,9 @@ function App() {
       </Heading>
       <CSVReader onFileLoaded={(data) => handleCSV(data)} /> 
 
-      {
-        result.length ? <Datagrid data={result} /> : <Heading>0 results</Heading>
-      }
+      
+        <Datagrid data={result} /> 
+      
     </StyledPage>
   );
 }
